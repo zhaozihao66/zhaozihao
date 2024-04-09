@@ -1,0 +1,58 @@
+#include <stdio.h>
+int main ()
+{
+	int a1=0,b1=0,r1=8;
+	int a2=2,b2=2,r2=8;
+	//scanf("%d %d %d", &a1,&b1,&r1);
+	//scanf("%d %d %d", &a2,&b2,&r2);
+	
+	int f,g,h,j,k,l;
+	
+	
+	int x1=2,y1=3,x2=4,y2=3,x3=4,y3=4;
+	//scanf("%d %d %d %d %d %d %d", &x1,&y2,&x2,&y2,&x3,&y3);
+	
+	//printf("%d\n", (a1-a2)*(a1-a2)+(b1-b2)*(b1-b2));
+	//printf("%d\n", r1-r2);
+    f=(a1-x1)*(a1-x1)+(b1-y1)*(b1-y1);
+	g=(a1-x2)*(a1-x2)+(b1-y2)*(b1-y2);
+    h=(a1-x3)*(a1-x3)+(b1-y3)*(b1-y3);
+    j=(a2-x1)*(a2-x1)+(b2-y1)*(b2-y1);
+    k=(a2-x2)*(a2-x2)+(b2-y2)*(b2-y2);
+    l=(a2-x3)*(a2-x3)+(b2-y3)*(b2-y3);
+    
+   printf("%d\n",f);
+	//printf("%d\n",g);
+   // printf("%d\n",h);
+   // printf("%d\n",j);
+    //printf("%d\n",k);
+   // printf("%d\n",l);
+    
+    if(f<r1*r1){
+    	if(g<r1*r1){
+    		if(h<r1*r1){
+    			if(j<r2*r2){
+    				if(k<r2*r2){
+    					if(l<r2*r2){
+    						printf("Yes");
+						}else{
+							printf("No");
+						}
+					}else{
+						printf("No");
+					}
+				}else{
+					printf("No");
+				}
+			}else{
+				printf("No");
+			}
+		}else{
+			printf("No");
+		}
+	}else{
+		printf("No");
+	}
+	
+	return 0;	
+	}
