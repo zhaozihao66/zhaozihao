@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	int n,i=1,x=1;
+	scanf("%d",&n);
+	while(i<n){
+		x=x*10;
+		i++;
+	} 
+	i=x;
+	while(i<x*10){
+		int t=i;
+		int sum=0;
+		int j,p;
+		while(t>0){
+			int d=t%10;
+			t/=10;
+			p=d;
+			int j=1; 
+			while(j<n){
+				p=p*d;
+				j++;
+			}sum+=p;
+		}if(sum==i){
+			printf("%d\n",i);
+		}		
+		i++;
+	}
+}
